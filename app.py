@@ -1,15 +1,40 @@
 import streamlit as st
 from google.cloud import firestore
 from google.oauth2 import service_account
+from annotated_text import annotated_text
 import json
 
-key_dict = json.loads(st.secrets(["textkey"]))
+########## connecting to database
+# Authenticate to Firestore with the secrets account key.
+key_dict = json.loads(st.secrets["textkey"])
 creds = service_account.Credentials.from_service_account_info(key_dict)
-db = firestore.Client(credentials=creds, project="DripIndex")
+db = firestore.Client(credentials=creds)
+#########################################################
+
+
+doc_ref = db.collection("drip").document("view_count")
+# function increments by 1 per visit
+def increment_view_count():
+  # gets the data at that reference collection and document
+  views = doc_ref.get().get("views")
+  views += 1
+  doc_ref.update({"views": views})
+
+
+def get_views():
+    doc = doc_ref.get()
+    view_count = doc.to_dict().get("views")
+    return view_count
+
+
+
+
+############ Front end 
 
 
 
 st.title(':fire: DRIP INDEX')
+annotated_text((f"Total views:  {get_views()}",""))
 st.header('Discover New Streetwear startup brands')
 
 with st.expander('About this app'):
@@ -88,3 +113,5 @@ st.write("Nothing... yet!")
 
 
 
+if __name__ == "__main__":
+    increment_view_count()
