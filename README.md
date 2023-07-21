@@ -1,4 +1,7 @@
-# DripIndex
+# DripIndex 
+https://dripindex.streamlit.app/
+
 serves as an index for streetwear brands
-Give it up to 30 seconds to load as the server may need to turn on again
-[streamlit-app-2023-07-21-15-07-42.webm](https://github.com/martyash/DripIndex/assets/72799235/aa472425-2409-4a29-824a-3fff7253b87b)
+Give it up to 30 seconds to load when visiting for the 1st time
+
+![github gif](https://github.com/martyash/DripIndex/assets/72799235/e6b25ab4-4fa1-403d-97f1-d292e213ca48)
