@@ -58,6 +58,8 @@ st.write("Nothing...yet!")
 # Asia
 st.header("Asia")
 
+#Bangladesh 
+st.write(":flag-bd: __Dacca__ : [shop](https://fromdacca.com/shop/) [insta](https://www.instagram.com/from.dacca/)")
 #India
 st.write(":flag-in: __audstro.__  : [shop](https://audstro.com/) [insta](https://www.instagram.com/audstro._/?hl=en)")
 st.write(":flag-in: __op-haneen__ : [shop](https://ophaneen.com/) [insta](https://www.instagram.com/op_haneen/?hl=en)")
