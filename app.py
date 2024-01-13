@@ -39,7 +39,7 @@ st.header('Discover New Streetwear startup brands')
 
 with st.expander('About this app'):
   st.write('This app serves as an index of various upcoming streetwear brands')
-  st.write('if you would like your brand added, please email the country your brand is located, links to your store, ig and tiktok(if you have one) at dripdreamer@gmail.com ')
+  st.write('if you would like your brand added, please email the country your brand is located, links to your store, ig and tiktok(if you have one) at dripdreamerteam@gmail.com ')
   st.write("Also if you have any feature requests message me and i'll see what i can do")
 
 #Africa
@@ -108,6 +108,7 @@ st.write(":flag-us: __Entry Level__ [shop](https://entrylevel-llc.com/) [insta](
 st.write(":flag-us: __Lazy Los Angeles__ : [shop](https://lazylosangeles.com/) [insta](https://www.instagram.com/lazylosangeles_/)")
 st.write(":flag-us: __Lovely Hearts Kiss Club__ [shop](https://www.instagram.com/lacorsiaco/) [insta](https://www.instagram.com/lovelyheartskissclub/)")
 st.write(":flag-us: __Pieces Cache__ : [shop](https://www.piecescache.com/store) [insta](https://www.instagram.com/pieces.cache/?hl=en)")
+st.write(":flag-us: __takenote__ : [shop](https://www.takenotegoods.co/collections/all) [insta](https://www.instagram.com/takenotegoods.co/?hl=en)")
 
 st.header("South America")
 st.write("Nothing... yet!")
